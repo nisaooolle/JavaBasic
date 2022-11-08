@@ -49,7 +49,7 @@ public class TugasJavaBasic {
                                         int r;
                                         switch (datar) {
                                             case 1:
-                                                System.out.println("Masukkan Panjang : ");
+                                                System.out.print("Masukkan Panjang : ");
                                                 angka1 = sc.nextInt();
 
                                                 System.out.print("masukkan Lebar : ");
@@ -71,13 +71,13 @@ public class TugasJavaBasic {
                                                 System.out.print("masukkan Tinggi : ");
                                                 t = sc.nextInt();
                                                 System.out.println("Hasilnya luas segitiga : "
-                                                        + (1 * a * t/2 )+ "meter Kuadrat");
+                                                        + (1 * a * t/2 )+ "m²");
                                                 break;
                                             case 4:
                                                 System.out.println("Masukkan  jari-jari : ");
                                                 r = sc.nextInt();
                                                 System.out.println(
-                                                        "Hasilnya luas lingkaran : " + (22 * r * r/7 + "meter Kuadrat"));
+                                                        "Hasilnya luas lingkaran : " + (22 * r * r/7 + "m²"));
                                                 break;
 
                                         }
@@ -102,7 +102,7 @@ public class TugasJavaBasic {
                                                 l = sc.nextInt();
                                                 System.out.println("masukkan tinggi :");
                                                 t = sc.nextInt();
-                                                System.out.println("Hasil volume Balok : " + p * l * t + "liter");
+                                                System.out.println("Hasil volume Balok : " + p * l * t + " liter");
                                                 break;
                                             case 2:
                                                 System.out.println("masukkan sisi : ");
@@ -113,9 +113,7 @@ public class TugasJavaBasic {
                                                 System.out.println("masukkan jari -jari : ");
                                                 jari = sc.nextInt();
                                                 System.out.println(
-                                                        "Hasil volume Bola : " + 4 * 22 * jari * jari /3 /7+ "liter");
-                                                break;
-                                            default:
+                                                        "Hasil volume Bola : " + 4 * 22 * jari * jari /3 /7+ " liter");
                                                 break;
                                         }
                                     } while (ruang < 4);
@@ -231,42 +229,42 @@ public class TugasJavaBasic {
                                                 System.out.println("Masukkan Nilai (meter)");
                                                 meter = sc.nextFloat();
                                                 System.out.println(
-                                                        "Hasil konverensi " + meter + "=" + (meter * 1000) + " km ");
+                                                        "Hasil konverensi " + meter + "=" + (meter / 1000) + " km ");
                                                 break;
                                             case 2:
                                                 System.out.println("HM");
                                                 System.out.println("Masukkan Nilai (meter)");
                                                 meter = sc.nextFloat();
                                                 System.out.println(
-                                                        "Hasil konverensi " + meter + "=" + (meter * 100) + " hm ");
+                                                        "Hasil konverensi " + meter + "=" + (meter / 100) + " hm ");
                                                 break;
                                             case 3:
                                                 System.out.println("Dam");
                                                 System.out.println("Masukkan Nilai (meter)");
                                                 meter = sc.nextFloat();
                                                 System.out.println(
-                                                        "Hasil konverensi " + meter + "=" + (meter * 10) + " hm ");
+                                                        "Hasil konverensi " + meter + "=" + (meter / 10) + " dam ");
                                                 break;
                                             case 4:
                                                 System.out.println("DM");
                                                 System.out.println("Masukkan Nilai (meter)");
                                                 meter = sc.nextFloat();
                                                 System.out.println(
-                                                        "Hasil konverensi " + meter + "=" + (meter / 10) + " hm ");
+                                                        "Hasil konverensi " + meter + "=" + (meter * 10) + " dm ");
                                                 break;
                                             case 5:
                                                 System.out.println("CM");
                                                 System.out.println("Masukkan Nilai (meter)");
                                                 meter = sc.nextFloat();
                                                 System.out.println(
-                                                        "Hasil konverensi " + meter + "=" + (meter / 100) + " hm ");
+                                                        "Hasil konverensi " + meter + "=" + (meter * 100) + " cm ");
                                                 break;
                                             case 6:
                                                 System.out.println("MM");
                                                 System.out.println("Masukkan Nilai (meter)");
                                                 meter = sc.nextFloat();
                                                 System.out.println(
-                                                        "Hasil konverensi " + meter + "=" + (meter / 1000) + " hm ");
+                                                        "Hasil konverensi " + meter + "=" + (meter * 1000) + " mm ");
                                                 break;
                                         }
                                     } while (panjang < 7);
@@ -286,42 +284,42 @@ public class TugasJavaBasic {
                                                 System.out.println("Masukkan Nilai (gram)");
                                                 gram = sc.nextFloat();
                                                 System.out.println(
-                                                        "Hasil konverensi " + gram + "=" + (gram * 1000) + " km ");
+                                                        "Hasil konverensi " + gram + "=" + (gram / 1000) + " kg ");
                                                 break;
                                             case 2:
                                                 System.out.println("Hg");
                                                 System.out.println("Masukkan Nilai (gram)");
                                                 gram = sc.nextFloat();
                                                 System.out.println(
-                                                        "Hasil konverensi " + gram + "=" + (gram * 100) + " km ");
+                                                        "Hasil konverensi " + gram + "=" + (gram / 100) + " hg ");
                                                 break;
                                             case 3:
                                                 System.out.println("Dag");
                                                 System.out.println("Masukkan Nilai (gram)");
                                                 gram = sc.nextFloat();
                                                 System.out.println(
-                                                        "Hasil konverensi " + gram + "=" + (gram * 10) + " km ");
+                                                        "Hasil konverensi " + gram + "=" + (gram / 10) + " dag ");
                                                 break;
                                             case 4:
                                                 System.out.println("Dg");
                                                 System.out.println("Masukkan Nilai (gram)");
                                                 gram = sc.nextFloat();
                                                 System.out.println(
-                                                        "Hasil konverensi " + gram + "=" + (gram / 10) + " km ");
+                                                        "Hasil konverensi " + gram + "=" + (gram * 10) + " gd ");
                                                 break;
                                             case 5:
                                                 System.out.println("Cg");
                                                 System.out.println("Masukkan Nilai (gram)");
                                                 gram = sc.nextFloat();
                                                 System.out.println(
-                                                        "Hasil konverensi " + gram + "=" + (gram / 100) + " km ");
+                                                        "Hasil konverensi " + gram + "=" + (gram * 100) + " cg ");
                                                 break;
                                             case 6:
                                                 System.out.println("Mg");
                                                 System.out.println("Masukkan Nilai (gram)");
                                                 gram = sc.nextFloat();
                                                 System.out.println(
-                                                        "Hasil konverensi " + gram + "=" + (gram / 1000) + " km ");
+                                                        "Hasil konverensi " + gram + "=" + (gram * 1000) + " mg ");
                                                 break;
 
                                             default:
