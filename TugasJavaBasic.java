@@ -45,7 +45,7 @@ public class TugasJavaBasic {
                                         System.out.println("masukkan pilihan");
                                         datar = sc.nextInt();
                                         int angka1, angka2;
-                                        int a, t;
+                                        int a,t;
                                         int r;
                                         switch (datar) {
                                             case 1:
@@ -158,7 +158,7 @@ public class TugasJavaBasic {
                                                         case 2:
                                                             System.out.println("Celcius ke Fahrenheit :");
                                                             C = sc.nextInt();
-                                                            System.out.println("hasilnya : " + (9 * C + 32 / 5 + "°R"));
+                                                            System.out.println("hasilnya : " + (9 * C + 32 / 5 + "°F"));
                                                             break;
 
                                                     }
@@ -206,7 +206,7 @@ public class TugasJavaBasic {
                                                         case 2:
                                                             System.out.println("Fahrenheit ke Reamur  :");
                                                             F = sc.nextInt();
-                                                            System.out.println("hasilnya : " + (4 * F - 32 / 9) + "°F");
+                                                            System.out.println("hasilnya : " + (4 * F - 32 / 9) + "°R");
                                                             break;
 
                                                     }
