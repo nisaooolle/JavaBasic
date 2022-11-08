@@ -45,7 +45,7 @@ public class TugasJavaBasic {
                                         System.out.println("masukkan pilihan");
                                         datar = sc.nextInt();
                                         int angka1, angka2;
-                                        int a,t;
+                                        int a, t;
                                         int r;
                                         switch (datar) {
                                             case 1:
@@ -71,13 +71,13 @@ public class TugasJavaBasic {
                                                 System.out.print("masukkan Tinggi : ");
                                                 t = sc.nextInt();
                                                 System.out.println("Hasilnya luas segitiga : "
-                                                        + (1 * a * t/2 )+ "m²");
+                                                        + (1 * a * t / 2) + "m²");
                                                 break;
                                             case 4:
                                                 System.out.println("Masukkan  jari-jari : ");
                                                 r = sc.nextInt();
                                                 System.out.println(
-                                                        "Hasilnya luas lingkaran : " + (22 * r * r/7 + "m²"));
+                                                        "Hasilnya luas lingkaran : " + (22 * r * r / 7 + "m²"));
                                                 break;
 
                                         }
@@ -113,7 +113,8 @@ public class TugasJavaBasic {
                                                 System.out.println("masukkan jari -jari : ");
                                                 jari = sc.nextInt();
                                                 System.out.println(
-                                                        "Hasil volume Bola : " + 4 * 22 * jari * jari /3 /7+ " liter");
+                                                        "Hasil volume Bola : " + 4 * 22 * jari * jari / 3 / 7
+                                                                + " liter");
                                                 break;
                                         }
                                     } while (ruang < 4);
@@ -143,7 +144,7 @@ public class TugasJavaBasic {
                                                 System.out.println("Celcius");
                                                 int Celcius = 1;
                                                 do {
-                                                    int  C;
+                                                    int C;
                                                     System.out.println(
                                                             "Pilih soal dibawah ini : \n 1. Celcius ke Reamur \n 2. Celcius ke Fahrenheit\n 3. Exit ");
                                                     Celcius = sc.nextInt();
@@ -152,7 +153,7 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Celcius ke Reamur : ");
                                                             C = sc.nextInt();
-                                                            System.out.println("hasilnya : " + (4 * C/5) + "°R");
+                                                            System.out.println("hasilnya : " + (4 * C / 5) + "°R");
                                                             break;
                                                         case 2:
                                                             System.out.println("Celcius ke Fahrenheit :");
@@ -176,12 +177,12 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Reamur ke Celcius : ");
                                                             R = sc.nextInt();
-                                                            System.out.println("hasilnya : " + (5 * R/4) + "°C");
+                                                            System.out.println("hasilnya : " + (5 * R / 4) + "°C");
                                                             break;
                                                         case 2:
                                                             System.out.println("Reamur ke Fahrenheit  :");
                                                             R = sc.nextInt();
-                                                            System.out.println("hasilnya : " + (9 * R + 32/4) + "°F");
+                                                            System.out.println("hasilnya : " + (9 * R + 32 / 4) + "°F");
                                                             break;
 
                                                     }
@@ -191,7 +192,7 @@ public class TugasJavaBasic {
                                                 System.out.println("Fahrenheit");
                                                 int Fahrenheit = 1;
                                                 do {
-                                                    int  F;
+                                                    int F;
                                                     System.out.println(
                                                             "Pilih soal dibawah ini : \n 1. Fahrenheit ke Celcius  \n 2. Fahrenheit ke Reamur   \n 3. Exit ");
                                                     Fahrenheit = sc.nextInt();
@@ -200,12 +201,12 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Fahrenheit ke Celcius : ");
                                                             F = sc.nextInt();
-                                                            System.out.println("hasilnya : " + (5 * F - 32 /9) + "°C");
+                                                            System.out.println("hasilnya : " + (5 * F - 32 / 9) + "°C");
                                                             break;
                                                         case 2:
                                                             System.out.println("Fahrenheit ke Reamur  :");
                                                             F = sc.nextInt();
-                                                            System.out.println("hasilnya : " + (4 * F - 32/9) + "°F");
+                                                            System.out.println("hasilnya : " + (4 * F - 32 / 9) + "°F");
                                                             break;
 
                                                     }
@@ -338,7 +339,6 @@ public class TugasJavaBasic {
                         if (angka.length() > 7 && angka.length() < 10) {
                             int rhs;
                             System.out.println("Selamat Datang VIP!!");
-
                             do {
                                 System.out.println(
                                         "silahkan pilih menu rahasia : \n 1. Uppercase \n 2. Lowercase \n 3. Reverse \n 4. Exit ");
@@ -347,28 +347,25 @@ public class TugasJavaBasic {
                                 System.out.println("Anda memilih : " + rhs);
                                 switch (rhs) {
                                     case 1:
-                                        String lorem;
                                         System.out.println("Uppercase");
                                         sc.nextLine();
                                         System.out.println("masukkan data : ");
-                                        lorem = sc.nextLine();
-                                        System.out.println(lorem.toUpperCase());
+                                        angka = sc.nextLine();
+                                        System.out.println(angka.toUpperCase());
                                         break;
                                     case 2:
-                                        String cihuy;
                                         System.out.println("Lowercase");
                                         sc.nextLine();
                                         System.out.println("masukkan data : ");
-                                        cihuy = sc.nextLine();
-                                        System.out.println(cihuy.toLowerCase());
+                                        angka = sc.nextLine();
+                                        System.out.println(angka.toLowerCase());
                                         break;
                                     case 3:
-                                        String hello;
                                         System.out.println("Reverse");
                                         sc.nextLine();
                                         System.out.println("masukkan data : ");
-                                        hello = sc.nextLine();
-                                        List<String> list = Arrays.asList(hello.split(""));
+                                        angka = sc.nextLine();
+                                        List<String> list = Arrays.asList(angka.split(""));
                                         Collections.reverse(list);
                                         System.out.println(
                                                 String.join("", list));
@@ -377,7 +374,7 @@ public class TugasJavaBasic {
                             } while (rhs < 4);
                             break;
                         } else {
-                            System.out.println("Kembali ke menu awal");
+                            System.out.println("Nilai unik salah!!");
                         }
                 }
             } while (menu < 4);
