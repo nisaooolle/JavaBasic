@@ -55,14 +55,14 @@ public class TugasJavaBasic {
                                                 System.out.print("masukkan Lebar : ");
                                                 angka2 = sc.nextInt();
                                                 System.out.println("Hasilnya luas persegi panjang : "
-                                                        + (angka1 * angka2 + "meter Kuadrat"));
+                                                        + (angka1 * angka2 + "m²"));
                                                 break;
                                             case 2:
                                                 System.out.println("Masukkan Sisi");
                                                 angka1 = sc.nextInt();
                                                 System.out.println(
                                                         "Hasilnya luas persegi : "
-                                                                + (angka1 * angka1 + "meter Kuadrat"));
+                                                                + (angka1 * angka1 + "m²"));
                                                 break;
                                             case 3:
                                                 System.out.print("masukkan alas : ");
