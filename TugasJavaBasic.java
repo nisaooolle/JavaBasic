@@ -45,7 +45,7 @@ public class TugasJavaBasic {
                                         System.out.println("masukkan pilihan");
                                         datar = sc.nextInt();
                                         int angka1, angka2;
-                                        int a,t;
+                                        int a, t;
                                         int r;
                                         switch (datar) {
                                             case 1:
@@ -113,7 +113,7 @@ public class TugasJavaBasic {
                                                 System.out.println("masukkan jari -jari : ");
                                                 jari = sc.nextInt();
                                                 System.out.println(
-                                                        "Hasil volume Bola : " + 4 * 22 * jari * jari / 3 / 7
+                                                        "Hasil volume Bola : " + 4 * 22 * jari * jari * jari / 3 / 7
                                                                 + " liter");
                                                 break;
                                         }
@@ -364,11 +364,12 @@ public class TugasJavaBasic {
                                         System.out.println("Reverse");
                                         sc.nextLine();
                                         System.out.println("masukkan data : ");
-                                        angka = sc.nextLine();
-                                        List<String> list = Arrays.asList(angka.split(""));
+                                        String lorem;
+                                        lorem = sc.nextLine();
+                                        List<String> list = Arrays.asList(lorem.split(" "));
                                         Collections.reverse(list);
                                         System.out.println(
-                                                String.join("", list));
+                                                String.join(" ", list));
                                         break;
                                 }
                             } while (rhs < 4);
@@ -380,7 +381,7 @@ public class TugasJavaBasic {
             } while (menu < 4);
             System.out.println("Anda sudah keluar!!");
         } else {
-            System.out.println("Akses ditolak");
+            System.out.println("Akses ditolak,silahkan run ulang");
             sc.close();
         }
 
