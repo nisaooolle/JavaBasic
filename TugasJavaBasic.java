@@ -5,7 +5,9 @@ import java.util.Scanner;
 
 public class TugasJavaBasic {
     public static void main(String[] args) {
+        // panggil scanner
         Scanner sc = new Scanner(System.in);
+        // Data variable
         String nama = "Administrator";
         String password;
         int pin = 123456789;
@@ -23,17 +25,18 @@ public class TugasJavaBasic {
                 System.out.println(
                         "Pilih menu di bawah ini : \n 1. Bangun Ruang/Datar \n 2.Konversi \n 3.Secret Menu \n 4.Exit ");
                 // input data
+                System.out.println("silahkan pilih menu :");
                 menu = sc.nextInt();
                 System.out.println("Anda memilih menu : " + menu);
                 switch (menu) {
                     case 1:
                         int soal = 1;
-                        System.out.println("soal 1");
+                        System.out.println("Menu 1");
                         do {
                             System.out.println(
                                     "Pilih Menu di bawah ini :\n 1. Luas (Meter Kuadrat) \n 2. Volume (Liter) \n 3. Exit");
+                            System.out.println("silahkan pilih soal : ");
                             soal = sc.nextInt();
-
                             System.out.println("Anda memilih soal nomer  :" + soal);
                             switch (soal) {
                                 case 1:
@@ -42,7 +45,7 @@ public class TugasJavaBasic {
                                     do {
                                         System.out.println(
                                                 "pilih soal dibawah ini :\n 1. Persegi panjang \n 2. Persegi \n 3. Segitiga \n 4. Lingkaran \n 5. Exit");
-                                        System.out.println("masukkan pilihan");
+                                        System.out.println("masukkan pilihan : ");
                                         datar = sc.nextInt();
                                         int angka1, angka2;
                                         int a, t;
@@ -127,6 +130,7 @@ public class TugasJavaBasic {
                         do {
                             System.out.println(
                                     "Pilih Konversi di bawah ini :\n 1. Derajat \n 2. Panjang (meter)  \n 3.  Berat (gram) \n 4.Exit");
+                            System.out.println("masukkan pilihan :");
                             Konversi = sc.nextInt();
                             System.out.println("Anda memilih Konversi nomer  :" + Konversi);
                             switch (Konversi) {
@@ -136,8 +140,8 @@ public class TugasJavaBasic {
                                     do {
                                         System.out.println(
                                                 "Pilih soal dibawah in : \n 1. Celcius \n 2. Reamur \n 3. Fahrenheit \n 4. Exit");
+                                        System.out.println("masukkan pilihan :");
                                         derajat = sc.nextInt();
-
                                         System.out.println("Anda memilih soal nomer : " + derajat);
                                         switch (derajat) {
                                             case 1:
@@ -147,6 +151,7 @@ public class TugasJavaBasic {
                                                     int C;
                                                     System.out.println(
                                                             "Pilih soal dibawah ini : \n 1. Celcius ke Reamur \n 2. Celcius ke Fahrenheit\n 3. Exit ");
+                                                    System.out.println("masukkan pilihan :");
                                                     Celcius = sc.nextInt();
                                                     System.out.println("Anda memilih soal nomer : " + Celcius);
                                                     switch (Celcius) {
@@ -171,6 +176,7 @@ public class TugasJavaBasic {
                                                     int R;
                                                     System.out.println(
                                                             "Pilih soal dibawah ini : \n 1. Reamur ke Celcius  \n 2. Reamur ke Fahrenheit   \n 3. Exit ");
+                                                    System.out.println("masukkan pilihan :");
                                                     Reamur = sc.nextInt();
                                                     System.out.println("Anda memilih soal nomer : " + Reamur);
                                                     switch (Reamur) {
@@ -195,6 +201,7 @@ public class TugasJavaBasic {
                                                     int F;
                                                     System.out.println(
                                                             "Pilih soal dibawah ini : \n 1. Fahrenheit ke Celcius  \n 2. Fahrenheit ke Reamur   \n 3. Exit ");
+                                                    System.out.println("masukkan pilihan :");
                                                     Fahrenheit = sc.nextInt();
                                                     System.out.println("Anda memilih soal nomer : " + Fahrenheit);
                                                     switch (Fahrenheit) {
@@ -277,6 +284,7 @@ public class TugasJavaBasic {
                                         Float gram;
                                         System.out.println(
                                                 "silahkan pilih : \n 1. Kg \n 2. Hg \n 3. Dag  \n 4. Dg \n 5. Cg \n 6. Mg \n 7. Exit ");
+                                        System.out.println("masukkan pilihan :");
                                         berat = sc.nextInt();
                                         System.out.println("Anda memilih : " + berat);
                                         switch (berat) {
@@ -322,9 +330,6 @@ public class TugasJavaBasic {
                                                 System.out.println(
                                                         "Hasil konverensi " + gram + "=" + (gram * 1000) + " mg ");
                                                 break;
-
-                                            default:
-                                                break;
                                         }
                                     } while (berat < 7);
                                     break;
@@ -342,8 +347,8 @@ public class TugasJavaBasic {
                             do {
                                 System.out.println(
                                         "silahkan pilih menu rahasia : \n 1. Uppercase \n 2. Lowercase \n 3. Reverse \n 4. Exit ");
+                                System.out.println("masukkan pilihan :");
                                 rhs = sc.nextInt();
-
                                 System.out.println("Anda memilih : " + rhs);
                                 switch (rhs) {
                                     case 1:
