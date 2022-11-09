@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class TugasJavaBasic {
     public static void main(String[] args) {
-        // panggil scanner
+        // panggil scanner 
+        // digunakan untuk mengeksekusi sistem secara terus menerus
         Scanner sc = new Scanner(System.in);
         // Data variable
         String nama = "Administrator";
@@ -18,6 +19,7 @@ public class TugasJavaBasic {
         password = sc.next();
         System.out.print("Silahkan Masukan Pin : ");
         pin = sc.nextInt();
+        // kondisi
         if (nama.equals("Administrator") && password.length() >= 5 && pin == 123456789) {
             System.out.println("Akses diterima,Selamat Datang");
             int menu = 1;
@@ -35,6 +37,7 @@ public class TugasJavaBasic {
                         do {
                             System.out.println(
                                     "Pilih Menu di bawah ini :\n 1. Luas (Meter Kuadrat) \n 2. Volume (Liter) \n 3. Exit");
+                            // input data
                             System.out.println("silahkan pilih soal : ");
                             soal = sc.nextInt();
                             System.out.println("Anda memilih soal nomer  :" + soal);
@@ -163,7 +166,7 @@ public class TugasJavaBasic {
                                                         case 2:
                                                             System.out.println("Celcius ke Fahrenheit :");
                                                             C = sc.nextInt();
-                                                            System.out.println("hasilnya : " + (9 * C + 32 / 5 + "°F"));
+                                                            System.out.println("hasilnya : " + ((C * 9/5) +32 + "°F"));
                                                             break;
 
                                                     }
@@ -188,7 +191,8 @@ public class TugasJavaBasic {
                                                         case 2:
                                                             System.out.println("Reamur ke Fahrenheit  :");
                                                             R = sc.nextInt();
-                                                            System.out.println("hasilnya : " + (9 * R + 32 / 4) + "°F");
+                                                            System.out.println("hasilnya : " + (9 * R / 4 + 32) + "°F");
+                                                            
                                                             break;
 
                                                     }
@@ -208,12 +212,12 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Fahrenheit ke Celcius : ");
                                                             F = sc.nextInt();
-                                                            System.out.println("hasilnya : " + (5 * F - 32 / 9) + "°C");
+                                                            System.out.println("hasilnya : " + (5 * (F - 32) / 9 + "°C"));
                                                             break;
                                                         case 2:
                                                             System.out.println("Fahrenheit ke Reamur  :");
                                                             F = sc.nextInt();
-                                                            System.out.println("hasilnya : " + (4 * F - 32 / 9) + "°R");
+                                                            System.out.println("hasilnya : " + (4* (F - 32)/ 9) + "°R");
                                                             break;
 
                                                     }
@@ -341,6 +345,8 @@ public class TugasJavaBasic {
                         System.out.println("Secret Menu : ");
                         System.out.println("masukkan nilai unik : ");
                         angka = sc.next();
+                        // kondisi
+                        // Leght => menghitung jumlah karakter yg ada di nilai data
                         if (angka.length() > 7 && angka.length() < 10) {
                             int rhs;
                             System.out.println("Selamat Datang VIP!!");
@@ -352,6 +358,7 @@ public class TugasJavaBasic {
                                 System.out.println("Anda memilih : " + rhs);
                                 switch (rhs) {
                                     case 1:
+                                        // Uppercase => merubah semua karakter kecil mnjdi huruf kapital
                                         System.out.println("Uppercase");
                                         sc.nextLine();
                                         System.out.println("masukkan data : ");
@@ -359,6 +366,7 @@ public class TugasJavaBasic {
                                         System.out.println(angka.toUpperCase());
                                         break;
                                     case 2:
+                                        // Lowercase => merubah semua karakter kapital mnjdi huruf kecil
                                         System.out.println("Lowercase");
                                         sc.nextLine();
                                         System.out.println("masukkan data : ");
@@ -371,6 +379,7 @@ public class TugasJavaBasic {
                                         System.out.println("masukkan data : ");
                                         String lorem;
                                         lorem = sc.nextLine();
+                                        // untuk membalikkan kalimat
                                         List<String> list = Arrays.asList(lorem.split(" "));
                                         Collections.reverse(list);
                                         System.out.println(
